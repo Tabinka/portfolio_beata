@@ -1,0 +1,145 @@
+@import "variables"
+    
+html, body
+    height: 100vh
+    font-family: "Cairo", sans-serif
+    margin: 0
+    padding: 0
+    scroll-behavior: smooth  
+
+header
+    width:100%
+    nav
+        width: 100%
+        height: 50px
+        text-align: center
+        position: fixed
+        background: rgb(255,255,255)
+        top: 0
+        line-height: 50px
+        z-index: 1000
+        ul 
+            margin: 0
+            padding: 0
+            li
+                list-style: none
+                display: inline-block
+                text-align: center
+                width: 15%
+                font-size: 20px
+                a 
+                    text-decoration: none
+                    color: black
+                    transition: 0.5s
+                    border-bottom: 2px solid $primaryColor scale(0)
+            li a:hover 
+                color: $primaryColor
+                border-bottom: 2px solid $primaryColor scale(1)
+
+#uvod 
+    display: flex
+    height: 100vh
+    margin: auto 100px
+    .left
+        margin: auto
+        img
+            width:500px
+            transform:  rotate(-10deg)
+    .right
+        margin: auto
+        width: 50%
+        text-align: center
+        .button
+            margin: 50px auto
+            background-color:$primaryColor
+            text-align: center
+            height: 50px
+            width: 200px
+            line-height: 50px
+            border-radius: 40px
+            transition: 1s
+            a
+                text-decoration: none
+                margin: auto
+                font-size: 25px
+                color: white
+        .button:hover
+
+
+#second_part
+    height: 100%
+    color: white
+    background:$primaryColor
+    .second_wrapper
+        display: flex
+        height: 100%
+        margin: auto 100px
+        flex-direction: column
+        .text
+            text-align: center
+            height: 100px
+            h1 
+                border-bottom: 2px solid white
+                width: 30%
+                margin: auto
+                line-height: 100px
+#second_part::before
+    content: ''
+    position: absolute
+    width: 100%
+    background: #fff
+
+
+#third_part
+    height: 100%
+    color: black
+    .third_wrapper
+        display: flex
+        height: 100%
+        margin: auto 100px
+        flex-direction: column
+        .text
+            text-align: center
+            height: 100px
+            h1 
+                border-bottom: 2px solid black
+                width: 30%
+                margin: auto
+                line-height: 100px
+
+.galery
+    display: grid
+    margin: auto
+    grid-template-columns: 50px 50px 100px
+    grid-column-gap: 200px
+    grid-row-gap: 50px
+    width: 40%
+    a 
+        width: 200px
+        height: 200px 
+        .obrazek
+            width: 200px
+            height: 200px
+            transition: 1s
+        .obrazek:hover
+            transform: scale(1.1)
+    
+    
+
+
+footer
+    .social
+        text-align: center
+        a 
+            text-decoration: none
+            color: black
+            font-size: 30px
+            margin: 20px
+        a:hover
+            color: $primaryColor
+            transition: 0.5s
+
+
+                
+
+                

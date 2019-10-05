@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100vh;
   font-family: "Cairo", sans-serif;
@@ -5,6 +9,133 @@ html, body {
   padding: 0;
   scroll-behavior: smooth;
 }
+
+/*TEST popup */
+
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 1005;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.close-button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top:20px;
+}
+
+.close-button:hover{
+  color: #998AA7;
+}
+
+.modal-body{
+  padding: 10px 15px;
+}
+
+#formular{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#formular input[type=text], input[type=email]{
+  border:none;
+  border-bottom: 2px solid lightgray;
+  transition: ease-in-out 500ms;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+  color: gray;
+}
+
+#formular input[type=text]:focus, input[type=email]:focus{
+  border-bottom: 2px solid #998AA7;
+  color: black;
+}
+
+#formular textarea{  
+  border: 2px solid lightgray;
+  transition: 500ms;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  resize: none;
+  color: gray;
+}
+
+#formular textarea:focus{
+  border: 2px solid #998AA7;
+  color: black;
+}
+
+#formular input[type=submit]
+{
+  background-color: #998AA7;
+  transition: 500ms;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+#formular input[type=submit]:hover{
+  background-color: #80708f;
+
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  pointer-events: none;
+  z-index: 1004;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*Real shit*/
 
 header {
   width: 100%;
@@ -18,6 +149,10 @@ header nav {
   top: 0;
   line-height: 50px;
   z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 header nav ul {
   margin: 0;
@@ -58,22 +193,25 @@ header nav ul li a:hover {
   width: 50%;
   text-align: center;
 }
-#uvod .right .button {
+#uvod .right button {
   margin: 50px auto;
   background-color: #998AA7;
   text-align: center;
   height: 50px;
   width: 200px;
-  line-height: 50px;
   border-radius: 40px;
   transition: 1s;
-}
-#uvod .right .button a {
+  cursor: pointer;
   text-decoration: none;
-  margin: auto;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
+  border: 1px solid #998AA7;
 }
+
+#uvod .right button:hover{
+  background-color:#80708f;
+}
+
 #second_part {
   height: 100%;
   color: white;
@@ -124,6 +262,80 @@ header nav ul li a:hover {
   line-height: 100px;
 }
 
+#four_part {
+  height: 100%;
+  color: white;
+  background: #998AA7;
+}
+#four_part .four_wrapper {
+  display: flex;
+  height: 100%;
+  margin: auto 100px;
+  flex-direction: column;
+}
+#four_part .four_wrapper .text {
+  text-align: center;
+  height: 100px;
+}
+#four_part .four_wrapper .text h1 {
+  border-bottom: 2px solid white;
+  width: 30%;
+  margin: auto;
+  line-height: 100px;
+}
+
+#kniha {
+  height: 100%;
+  color: white;
+  background: #998AA7;
+}
+#kniha .kniha_wrapper {
+  display: flex;
+  height: 100%;
+  margin: auto 100px;
+}
+
+#kniha .right{
+  width: 50%;
+}
+
+#kniha .kniha_wrapper .text {
+  text-align: center;
+}
+#kniha .kniha_wrapper .text h1 {
+  border-bottom: 2px solid white;
+  width: 30%;
+  margin: auto;
+  line-height: 100px;
+}
+
+#kniha button{
+  text-align: center;
+  width: 20%;
+  border: 2px solid white;
+  transition: 500ms;
+  border-radius: 30px;
+  margin: auto;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  background-color: #998AA7;
+}
+
+#kniha button:hover{
+  background-color: #80708f;
+}
+
+#kniha .left, .right{
+  margin: auto;
+}
+
+#kniha .left img{
+  width: 800px;
+}
+
 .galery {
   display: grid;
   margin: auto;
@@ -145,18 +357,39 @@ header nav ul li a:hover {
   transform: scale(1.1);
 }
 
-footer .social {
-  text-align: center;
+footer{
+  display: flex;
+  background: #998AA7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
 }
-footer .social a {
+
+footer .social, .back {
+  text-align: center;
+  line-height: 50px;
+}
+
+footer .social{
+  width:100%;
+}
+
+footer .back{
+  position: absolute;
+  right:20px
+}
+footer .social a, .back a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 30px;
   margin: 20px;
 }
-footer .social a:hover {
-  color: #998AA7;
+footer .social a:hover, .back a:hover {
+  color: black;
   transition: 0.5s;
 }
+
 
 /*# sourceMappingURL=style.css.map */

@@ -9,20 +9,21 @@
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"></script>
-    <title>Portfolio 2</title>
+    <title>Portfolio - Úvod</title>
 </head>
 <body>
+
     <header>
     <nav>
         <ul>
             <li><a href="#second_part">Grafika</a></li>
             <li><a href="#third_part">Digitální kresba</a></li>
-            <li><a href="#uvod">Logo</a></li>
-            <li><a href="#">Tradiční kresba</a></li>
+            <li><a href="#four_part">Tradiční kresba</a></li>
             <li><a href="kniha.html">Kniha</a></li>
         </ul>
     </nav>
 </header>
+
     <div id="uvod">
         <div class="left">
             <img src="images/profile.png" alt="Profile Pic">
@@ -32,16 +33,30 @@
                 <h1>Designer. Bartista. Artista.</h1>
                 <p>Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate. Sed eleifend lacus eu sapien sagittis imperdiet. Etiam tempor mollis augue, ut tincidunt ex interdum eu.</p>
             </div>
-            <div class="button">
-                <a href="#">Kontakt</a>
-            </div>
+            <button data-modal-target="#modal">Spolupráce</button>
         </div>
     </div>
+    <div class="modal" id="modal">
+        <button data-close-button class="close-button"><i class="fas fa-times"></i></button>
+        <div class="title">Kontaktujte mě</div>
+      <div class="modal-body">
+            <form id="formular" action="https://www.enformed.io/ca0mg6i8" method="POST">
+                    <input type="text" name="Jméno" class="name" placeholder="Vaše jméno"/>
+                    <input type="email" name="Email" placeholder="Váš email"/>
+                    <textarea name="Zpráva" id="subject" placeholder="Chci navázat spolupráci..."></textarea>
+                    <input id="odeslat" type="submit" value="Odeslat">          
+                    <input type="hidden" name="*subject" value="Zpráva z webové stránky" />      
+                    <input type="hidden" name="*reply" value="email" />      
+                    <input type="hidden" name="*honeypot" />
+            </form>
+      </div>
+    </div>
+    <div id="overlay"></div>
 
     <div id="second_part">
         <div class="second_wrapper">
             <div class="text"><h1>Grafika</h1></div>
-            <div class="galery" id="galery_1">
+            <div class="galery">
             <a href="images/Grafika/1.jpg" data-title="První obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/1.jpg) no-repeat center; background-size: cover;"></div></a>
             <a href="images/Grafika/2.jpg" data-title="Druhý obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/2.jpg) no-repeat center; background-size: cover;"></div></a>
             <a href="images/Grafika/3.jpg" data-title="Třetí obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/3.jpg) no-repeat center; background-size: cover;"></div></a>
@@ -57,7 +72,7 @@
     <div id="third_part">
         <div class="third_wrapper">
             <div class="text"><h1>Digitální kresba</h1></div>
-                <div class="galery" id="galery_2">
+                <div class="galery">
                     <a href="images/digitalni_kresba/1.jpg" data-lightbox="gallery-2" data-title="První obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/1.jpg) no-repeat center; background-size: cover;"></div></a>
                     <a href="images/digitalni_kresba/2.jpg" data-lightbox="gallery-2" data-title="Druhý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/2.jpg) no-repeat center; background-size: cover;"></div></a>
                     <a href="images/digitalni_kresba/3.jpg" data-lightbox="gallery-2" data-title="Třetí obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/3.jpg) no-repeat center; background-size: cover;"></div></a>
@@ -71,11 +86,24 @@
         </div>
         </div>
 
+        <div id="four_part">
+                <div class="four_wrapper">
+                    <div class="text"><h1>Tradiční kresba</h1></div>
+                        <div class="galery">
+                            <a href="images/tradicni_kresba/1.jpg" data-lightbox="gallery-3" data-title="První obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/1.jpg) no-repeat center; background-size: cover;"></div></a>
+                            <a href="images/tradicni_kresba/2.jpg" data-lightbox="gallery-3" data-title="Druhý obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/2.jpg) no-repeat center; background-size: cover;"></div></a>
+                            <a href="images/tradicni_kresba/3.jpg" data-lightbox="gallery-3" data-title="Třetí obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/3.jpg) no-repeat center; background-size: cover;"></div></a>
+                            <a href="images/tradicni_kresba/4.jpg" data-lightbox="gallery-3" data-title="Čtvrtý obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/4.jpg) no-repeat center; background-size: cover;"></div></a>
+                       </div>
+                </div>
+                </div>
+
     <footer>
         <div class="social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/priska_mill/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
+        <div class="back"><a href="#uvod"><i class="fas fa-chevron-circle-up"></i></a></div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

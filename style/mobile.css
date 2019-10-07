@@ -63,6 +63,10 @@
 }
 
 @media screen and (max-width: 768px){
+    header .logo span{
+        left: 50px;
+      }
+    
     .galery .obrazek
     {
         flex: 50%;
@@ -82,8 +86,8 @@
 
       #uvod{
         display: flex;
-        height: 100%;
-        margin: 100px 100px 200px 100px;
+        height: auto;
+        margin: 100px 50px 200px 50px;
         flex-direction: column;
     }
 

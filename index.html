@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
     <link rel="stylesheet" href="style/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"> 
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"></script>
-    <title>Portfolio - Úvod</title>
+    <title>Priska.cz</title>
 </head>
 <body>
 
     <header>
     <nav>
-        <ul>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo"><span><a href="index.html#uvod">Priska</a></span></div>
+        <ul class="menu">
             <li><a href="#second_part">Grafika</a></li>
             <li><a href="#third_part">Digitální kresba</a></li>
             <li><a href="#four_part">Tradiční kresba</a></li>
             <li><a href="kniha.html">Kniha</a></li>
+            <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
         </ul>
+
     </nav>
 </header>
 
@@ -31,7 +42,7 @@
         <div class="right">
             <div class="text">
                 <h1>Grafik. Ilustrátor.</h1>
-                <p>Zdravím, mé jméno je Beata Mílová, za sebou mám vystudovanou Střední školu cestovního ruchu a grafického designu. Moje další cíle? Chtěla bych být úspěšným grafikem a kreslířem na volné noze. Ilustrace dávám především na internet, kde vystupuji pod pseudonymem Priska.</p>
+                <p>Zdravím, mé jméno je <strong>Beata Mílová</strong>, za sebou mám vystudovanou Střední školu cestovního ruchu a grafického designu. Moje další cíle?<br> Chtěla bych být úspěšným grafikem a kreslířem na volné noze.<br> Ilustrace dávám především na internet, kde vystupuji pod pseudonymem Priska.</p>
             </div>
             <button data-modal-target="#modal">Spolupráce</button>
         </div>
@@ -41,14 +52,16 @@
         <div class="title">Kontaktujte mě</div>
       <div class="modal-body">
             <form id="formular" action="https://www.enformed.io/ca0mg6i8" method="POST">
-                    <input type="text" name="Jméno" class="name" placeholder="Vaše jméno"/>
-                    <input type="email" name="Email" placeholder="Váš email"/>
-                    <textarea name="Zpráva" id="subject" placeholder="Chci navázat spolupráci..."></textarea>
+                    <input required type="text" name="Jméno" class="name" placeholder="Vaše jméno"/>
+                    <input required type="email" name="Email" placeholder="Váš email"/>
+                    <textarea required name="Zpráva" id="subject" placeholder="Chci navázat spolupráci..."></textarea>
                     <input id="odeslat" type="submit" value="Odeslat">          
                     <input type="hidden" name="*subject" value="Zpráva z webové stránky" />      
                     <input type="hidden" name="*reply" value="email" />      
                     <input type="hidden" name="*honeypot" />
                     <input type="hidden" name="*redirect" value="https://priska.cz/" />
+                    <input type="hidden" name="*default_email" value="milova.beat@gmail.com" />
+            
             
             </form>
       </div>
@@ -57,45 +70,47 @@
 
     <div id="second_part">
         <div class="second_wrapper">
-            <div class="text"><h1>Grafika</h1></div>
+            <h1>Grafika</h1>
+            <div class="cara"></div>
             <div class="galery">
-            <a href="images/Grafika/1.jpg" data-title="První obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/1.jpg) no-repeat center; background-size: cover;"></div></a>
-            <a href="images/Grafika/2.jpg" data-title="Druhý obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/2.jpg) no-repeat center; background-size: cover;"></div></a>
-            <a href="images/Grafika/3.jpg" data-title="Třetí obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/3.jpg) no-repeat center; background-size: cover;"></div></a>
-            <a href="images/Grafika/4.jpg" data-title="Čtvrtý obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/4.jpg) no-repeat center; background-size: cover;"></div></a>
-            <a href="images/Grafika/5.jpg" data-title="Pátý obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/5.jpg) no-repeat center; background-size: cover;"></div></a>
-            <a href="images/Grafika/6.jpg" data-title="Šestý obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/6.jpg) no-repeat center; background-size: cover;"></div></a>
-            <a href="images/Grafika/7.jpg" data-title="Sedmý obrázek" data-lightbox="gallery-1"><div class="obrazek" style="background: url(images/Grafika/7.jpg) no-repeat center; background-size: cover;"></div></a>
+            <a class="obrazek" href="images/Grafika/1.jpg" data-title="První obrázek" data-lightbox="gallery-1"><img src="images/Grafika/1_nahled.jpg" ></a>
+            <a class="obrazek" href="images/Grafika/2.jpg" data-title="Druhý obrázek" data-lightbox="gallery-1"><img src="images/Grafika/2_nahled.jpg"></a>
+            <a class="obrazek" href="images/Grafika/3.jpg" data-title="Třetí obrázek" data-lightbox="gallery-1"><img src="images/Grafika/3_nahled.jpg"></a>
+            <a class="obrazek" href="images/Grafika/4.jpg" data-title="Čtvrtý obrázek" data-lightbox="gallery-1"><img src="images/Grafika/4_nahled.jpg"></a>
+            <a class="obrazek" href="images/Grafika/5.jpg" data-title="Pátý obrázek" data-lightbox="gallery-1"><img src="images/Grafika/5_nahled.jpg"></a>
+            <a class="obrazek" href="images/Grafika/6.jpg" data-title="Šestý obrázek" data-lightbox="gallery-1"><img src="images/Grafika/6_nahled.jpg"></a>
+            <a class="obrazek" href="images/Grafika/7.jpg" data-title="Sedmý obrázek" data-lightbox="gallery-1"><img src="images/Grafika/7_nahled.jpg"></a>
             </div>
         </div>
-
     </div>
 
     <div id="third_part">
         <div class="third_wrapper">
-            <div class="text"><h1>Digitální kresba</h1></div>
+            <h1>Digitální kresba</h1>
+            <div class="cara"></div>
                 <div class="galery">
-                    <a href="images/digitalni_kresba/1.jpg" data-lightbox="gallery-2" data-title="První obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/1.jpg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/2.jpg" data-lightbox="gallery-2" data-title="Druhý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/2.jpg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/3.jpg" data-lightbox="gallery-2" data-title="Třetí obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/3.jpg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/4.jpg" data-lightbox="gallery-2" data-title="Čtvrtý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/4.jpg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/5.jpg" data-lightbox="gallery-2" data-title="Pátý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/5.jpg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/6.jpeg" data-lightbox="gallery-2" data-title="Šestý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/6.jpeg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/7.jpeg" data-lightbox="gallery-2" data-title="Sedmý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/7.jpeg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/8.jpg" data-lightbox="gallery-2" data-title="Osmý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/8.jpg) no-repeat center; background-size: cover;"></div></a>
-                    <a href="images/digitalni_kresba/9.jpg" data-lightbox="gallery-2" data-title="Devátý obrázek"><div class="obrazek" style="background: url(images/digitalni_kresba/9.jpg) no-repeat center; background-size: cover;"></div></a>
+                    <a class="obrazek" href="images/digitalni_kresba/1.jpg" data-lightbox="gallery-2" data-title="První obrázek"><img src="images/digitalni_kresba/1_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/2.jpg" data-lightbox="gallery-2" data-title="Druhý obrázek"><img src="images/digitalni_kresba/2_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/3.jpg" data-lightbox="gallery-2" data-title="Třetí obrázek"><img src="images/digitalni_kresba/3_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/4.jpg" data-lightbox="gallery-2" data-title="Čtvrtý obrázek"><img src="images/digitalni_kresba/4_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/5.jpg" data-lightbox="gallery-2" data-title="Pátý obrázek"><img src="images/digitalni_kresba/5_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/6.jpeg" data-lightbox="gallery-2" data-title="Šestý obrázek"><img src="images/digitalni_kresba/6_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/7.jpeg" data-lightbox="gallery-2" data-title="Sedmý obrázek"><img src="images/digitalni_kresba/7_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/8.jpg" data-lightbox="gallery-2" data-title="Osmý obrázek"><img src="images/digitalni_kresba/8_nahled.jpg"></a>
+                    <a class="obrazek" href="images/digitalni_kresba/9.jpg" data-lightbox="gallery-2" data-title="Devátý obrázek"><img src="images/digitalni_kresba/9_nahled.jpg"></a>
                </div>
         </div>
-        </div>
+    </div>
 
         <div id="four_part">
                 <div class="four_wrapper">
-                    <div class="text"><h1>Tradiční kresba</h1></div>
+                   <h1>Tradiční kresba</h1>
+                   <div class="cara"></div>
                         <div class="galery">
-                            <a href="images/tradicni_kresba/1.jpg" data-lightbox="gallery-3" data-title="První obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/1.jpg) no-repeat center; background-size: cover;"></div></a>
-                            <a href="images/tradicni_kresba/2.jpg" data-lightbox="gallery-3" data-title="Druhý obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/2.jpg) no-repeat center; background-size: cover;"></div></a>
-                            <a href="images/tradicni_kresba/3.jpg" data-lightbox="gallery-3" data-title="Třetí obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/3.jpg) no-repeat center; background-size: cover;"></div></a>
-                            <a href="images/tradicni_kresba/4.jpg" data-lightbox="gallery-3" data-title="Čtvrtý obrázek"><div class="obrazek" style="background: url(images/tradicni_kresba/4.jpg) no-repeat center; background-size: cover;"></div></a>
+                            <a class="obrazek" href="images/tradicni_kresba/1.jpg" data-lightbox="gallery-3" data-title="První obrázek"><img src="images/tradicni_kresba/1_nahled.jpg"></a>
+                            <a class="obrazek" href="images/tradicni_kresba/2.jpg" data-lightbox="gallery-3" data-title="Druhý obrázek"><img src="images/tradicni_kresba/2_nahled.jpg"></a>
+                            <a class="obrazek" href="images/tradicni_kresba/3.jpg" data-lightbox="gallery-3" data-title="Třetí obrázek"><img src="images/tradicni_kresba/3_nahled.jpg"></a>
+                            <a class="obrazek" href="images/tradicni_kresba/4.jpg" data-lightbox="gallery-3" data-title="Čtvrtý obrázek"><img src="images/tradicni_kresba/4_nahled.jpg"></a>
                        </div>
                 </div>
                 </div>

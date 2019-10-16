@@ -132,6 +132,9 @@
     #kniha .container .box .details .content p{
         font-size: 0.9em;
     }
+    header .logo span{
+        left: 50px;
+    } 
     }
 
 @media screen and (max-width: 480px){

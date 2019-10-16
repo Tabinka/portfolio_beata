@@ -14,9 +14,10 @@
         <script src="js/lightbox-plus-jquery.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"></script>
-    <title>Priska.cz - Knihy</title>
+    <title>Knihy Beaty Mílové - priska.cz</title>
 </head>
 <body>
+<div id="kniha">
     <header>
             <nav>
                     <input type="checkbox" id="chk">
@@ -25,7 +26,7 @@
                     </label>
                     <div class="logo"><span><a href="index.html#uvod">Priska</a></span></div>
                 <ul class="menu">
-                    <li><a href="index.html#uvod">Úvod</a></li>
+                    <li class="first"><a href="index.html#uvod">Úvod</a></li>
                     <li><a href="index.html#second_part">Grafika</a></li>
                     <li><a href="index.html#third_part">Digitální kresba</a></li>
                     <li><a href="index.html#four_part">Tradiční kresba</a></li>
@@ -37,25 +38,30 @@
             </nav>
 </header>
 
-    <div id="kniha">
-        <div class="kniha_wrapper">
-        <div class="left">
-            <img src="images/Kniha/nahled.jpg" alt="Kniha náhled">
-        </div>
-        <div class="right">
-            <div class="text">
-                <h1>Willie</h1>
-                <div class="cara"></div>
-                <p>Kniha Willie je doprovázena více než 20 ilustracemi ke krátkému textu. Příběh se odehrává v postapokalyptické krajině, kde Willie hledá způsob přežití se svojí kamarádkou Carol.
-                   <br> Jedna se o klauzurní práci z roku 2019. 
-                    </p>
-                <button onclick="window.location.href = 'images/Kniha/celek.pdf';" > Náhled</button>
+    
+            
+    <div class="kniha_wrapper">
+        <h1>Moje literární práce</h1>
+        <div class="cara"></div>
+                
+    <div class="container">
+
+            <div class="box">
+                    <div class="image">
+                        <img src="images/Kniha/nahled.jpg" alt="Kniha náhled">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Willie</h2>
+                            <p>Kniha Willie je doprovázena více než 20 ilustracemi ke krátkému textu. Příběh se odehrává v postapokalyptické krajině, kde Willie hledá způsob přežití se svojí kamarádkou Carol.
+                                    <br><i>Jedná se o klauzurní práci z roku 2019.</i> </p>
+                                    <button onclick="window.location.href = 'images/Kniha/celek.pdf';" > Náhled</button>
+                        </div>
+                    </div>
             </div>
-
-        </div>
-
     </div>
     </div>
+</div>
 
     <footer>
         <div class="social">

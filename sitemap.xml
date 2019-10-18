@@ -1,14 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://priska.cz/</loc>
-    <lastmod>2019-10-09</lastmod>
+    <loc>http://www.priska.cz/</loc>
+    <lastmod>2019-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/logo.png</image:loc>
+      <image:title>Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/profile2.png</image:loc>
+      <image:title>Profilový obrázek</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/1_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/2_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/3_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/4_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/5_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/6_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/7_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/9_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Grafika/8_nahled.jpg</image:loc>
+      <image:title>Grafika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/1_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/2_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/3_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/4_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/5_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/6_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/7_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/digitalni_kresba/8_nahled.jpg</image:loc>
+      <image:title>Digitální kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/tradicni_kresba/2_nahled.jpg</image:loc>
+      <image:title>Tradiční kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/tradicni_kresba/3_nahled.jpg</image:loc>
+      <image:title>Tradiční kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/tradicni_kresba/4_nahled.jpg</image:loc>
+      <image:title>Tradiční kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/tradicni_kresba/1_nahled.jpg</image:loc>
+      <image:title>Tradiční kresba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/tradicni_kresba/5_nahled.jpg</image:loc>
+      <image:title>Tradiční kresba</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://priska.cz/kniha.html</loc>
-    <lastmod>2019-10-09</lastmod>
+    <loc>http://www.priska.cz/kniha.html</loc>
+    <lastmod>2019-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/logo.png</image:loc>
+      <image:title>Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.priska.cz/images/Kniha/nahled.jpg</image:loc>
+      <image:title>Kniha náhled</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.priska.cz/images/Kniha/celek.pdf</loc>
+    <lastmod>2019-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
-<!--<guid value="bc51ce5b-f9fe-4028-9971-251dfced1db1" />-->
+<!--<guid value="2ff60158-23e2-4471-93d9-0624e9e31d3a" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

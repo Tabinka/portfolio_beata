@@ -1,2 +1,3 @@
-https://priska.cz/
-https://priska.cz/kniha.html
+http://www.priska.cz/
+http://www.priska.cz/kniha.html
+http://www.priska.cz/images/Kniha/celek.pdf

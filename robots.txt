@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.htm
-Sitemap: https://priska.cz/sitemap.xml
+Sitemap: http://www.priska.cz/sitemap.xml

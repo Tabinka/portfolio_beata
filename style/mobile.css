@@ -19,6 +19,7 @@
         padding: 80px 0;
         line-height: normal;
         transition: 0.7s;
+        z-index: 1000;
     }
 
     .menu li{
@@ -51,6 +52,7 @@
 
     #chk:checked ~ .menu{
         right: 0;
+        z-index: 1000;
     }
 
     #uvod .right{
@@ -153,5 +155,11 @@
       
       #four_part .galery .obrazek{
         flex: 100%;
+      }
+
+      footer .social{
+          width: auto;
+          position: absolute;
+          right: 20px;
       }
 }

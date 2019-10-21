@@ -330,6 +330,10 @@ header nav .show-menu-btn{
   background: #998AA7;
 }
 
+#kniha h1 {
+font-size: 3em;
+}
+
 #kniha header nav{
   position: static;
 }

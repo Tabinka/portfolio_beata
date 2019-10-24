@@ -445,7 +445,7 @@ font-size: 3em;
 }
 
 .galery .obrazek {
- flex: 30%;
+ flex: 25%;
  overflow: hidden;
  cursor: pointer;
 }

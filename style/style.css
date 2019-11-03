@@ -342,6 +342,10 @@ font-size: 3em;
   width: 10%;
 }
 
+#kniha .kniha_wrapper{
+  background-color: #998AA7;
+}
+
 #kniha .kniha_wrapper h1{
   margin: 50px auto 0px auto;
   text-align: center;

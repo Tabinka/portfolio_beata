@@ -34,4 +34,15 @@ function closeModal(modal){
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+//jQuery funkce na zobrazení šipky vzhůru při scrollování
+$(window).scroll(function(){
+
+    if($(window).scrollTop() >= 500 ){
+        $( "#upArrow" ).css( "display", "block" );
+    } else {
+       
+   $( "#upArrow" ).css( "display" , "none" );
+    }
+  });
   
